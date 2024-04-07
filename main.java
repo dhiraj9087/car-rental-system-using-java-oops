@@ -51,7 +51,37 @@ class Car {
     {
         is_car_available= true;
     }
+
+
 }
+
+
+/**
+ * Customer
+ */
+class Customer {
+    private String customer_id;
+    private String customer_name;
+    
+    public Customer(String customer_id, String customer_name)
+    {
+        this.customer_id = customer_id;
+        this.customer_name = customer_name;
+    }
+
+    public String get_customer_id()
+    {
+        return customer_id;
+    }
+
+    public String get_customer_name()
+    {
+        return customer_name;
+    }
+}
+
+
+
 public class main {
 
     public static void main(String[] args) {

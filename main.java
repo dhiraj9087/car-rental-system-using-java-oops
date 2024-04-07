@@ -12,7 +12,7 @@ class Car {
     private double base_price_per_day; // price per day 
     private boolean is_car_available; // availibility of car
     
-    public Car(String car_id, String car_brand, String car_model, double basePriceDay, boolean is_car_available)   /// parameterized constructor
+    public Car(String car_id, String car_brand, String car_model, double base_price_per_day, boolean is_car_available)   /// parameterized constructor
     {
         this.car_id = car_id;
         this.car_brand = car_brand;
@@ -294,7 +294,7 @@ class Car_Rental_System {
             }
         }
         System.out.println("\nThank you for using the Car Rental System!");
-        
+
     }
 
 
@@ -306,6 +306,15 @@ class Car_Rental_System {
 public class main {
 
     public static void main(String[] args) {
-        System.out.println("running");
+        Car_Rental_System rentalSystem = new Car_Rental_System();
+
+        Car car1 = new Car("C001", "Toyota", "Camry", 60.0,true); // Different base price per day for each car
+        Car car2 = new Car("C002", "Honda", "Accord", 70.0,true);
+        Car car3 = new Car("C003", "Mahindra", "Thar", 150.0,true);
+        rentalSystem.add_car(car1);
+        rentalSystem.add_car(car2);
+        rentalSystem.add_car(car3);
+
+        rentalSystem.menu();
     }
 }

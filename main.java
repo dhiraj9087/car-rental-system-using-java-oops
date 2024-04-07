@@ -42,6 +42,15 @@ class Car {
         return is_car_available;
     }
 
+    public void car_rented()
+    {
+        is_car_available = false;
+    }
+
+    public void car_returend()
+    {
+        is_car_available= true;
+    }
 }
 public class main {
 

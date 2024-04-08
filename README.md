@@ -1,0 +1,25 @@
+- Overview
+  - Features
+    - Add cars: Adds cars to the system with details like ID, brand, model, price, and availability.
+    - Add customers: Adds customers to the system with ID and name.
+    - Rent a car: Allows customers to rent a car for a specified number of days.
+    - Return a car: Handles the process of returning a rented car, updating its availability status.
+    - Display available cars: Shows a list of cars that are available for rent.
+    - Calculate rental price: Computes the total price for a rental based on the number of days and the car's base price.
+- Classes
+  - Car: Represents a car with attributes like ID, brand, model, price, and availability status.
+  - Customer: Represents a customer with ID and name.
+  - Rental: Manages a rental transaction, linking a car to a customer for a specific duration.
+  - Car_Rental_System: Controls car rental operations, including adding cars and customers, renting and returning cars, and providing a menu interface.
+- Getting Started
+  - Compile Java files: Use a Java compiler to compile the Java source code files.
+  - Run the program: Execute the compiled program using the `java` command and run the `main` class.
+- Usage
+  - Input customer details: Enter customer information such as name.
+  - Select a car: Choose an available car for rental based on its ID.
+  - Confirm actions: Confirm rental or return actions as prompted by the system.
+- Example
+  - Sample code: Includes an example code snippet to initialize the car rental system and add cars.
+- Contributors
+  - [Dhiraj Marathe]
+
